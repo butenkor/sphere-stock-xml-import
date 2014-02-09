@@ -24,11 +24,11 @@ describe "elasticio file integration", ->
       <root>
         <row>
           <code>abc</code>
-          <quantity>-2</quantity>
+          -2
         </row>
         <row>
           <code>xyz</code>
-          <quantity>0</quantity>
+          0
         </row>
       </root>
       '''

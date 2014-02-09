@@ -34,7 +34,7 @@ describe '#transform', ->
       <root>
         <row>
           <code>1</code>
-          <quantity>2</quantity>
+          2
         </row>
       </root>
       '''
@@ -53,7 +53,7 @@ describe '#transform', ->
       <root>
         <row>
           <code>2</code>
-          <quantity>7.000</quantity>
+          7.000
           <CommittedDeliveryDate>2013-11-19T00:00:00</CommittedDeliveryDate>
         </row>
       </root>
@@ -74,7 +74,7 @@ describe '#transform', ->
       <root>
         <row>
           <code>foo-bar</code>
-          <quantity>7.000</quantity>
+          7.000
           <deliverydate>2013-11-05T00:00:00</deliverydate>
           <AppointedQuantity>12.000</AppointedQuantity>
         </row>
@@ -102,7 +102,7 @@ describe '#transform', ->
       <root>
         <row>
           <code>foo-bar</code>
-          <quantity>7.000</quantity>
+          7.000
           <deliverydate>2013-11-05T00:00:00</deliverydate>
           <AppointedQuantity>12.000</AppointedQuantity>
           <CommittedDeliveryDate>2013-11-19T00:00:00</CommittedDeliveryDate>

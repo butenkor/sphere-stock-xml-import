@@ -37,19 +37,13 @@ describe '#run', ->
         console.log err
         done()
 
-  it 'Nothing to do', (done) ->
-    @import.run '<root><bar></bar></root>', (msg) ->
-      expect(msg.status).toBe true
-      expect(msg.message).toBe 'Nothing to do.'
-      done()
-
   it 'one new stock', (done) ->
     rawXml =
       '''
       <root>
         <row>
           <code>123</code>
-          <quantity>2</quantity>
+          2
         </row>
       </root>
       '''
@@ -77,7 +71,7 @@ describe '#run', ->
       <root>
         <row>
           <code>234</code>
-          <quantity>7</quantity>
+          7
         </row>
       </root>
       '''
@@ -106,7 +100,7 @@ describe '#run', ->
       <root>
         <row>
           <code>1234567890</code>
-          <quantity>77</quantity>
+          77
         </row>
       </root>
       '''
@@ -135,7 +129,7 @@ describe '#run', ->
       <root>
         <row>
           <code>myEAN</code>
-          <quantity>-1</quantity>
+          -1
           <AppointedQuantity>10</AppointedQuantity>
           <CommittedDeliveryDate>1999-12-31T11:11:11.000Z</CommittedDeliveryDate>
         </row>
